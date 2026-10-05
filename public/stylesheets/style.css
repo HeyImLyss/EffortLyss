@@ -5,8 +5,14 @@ body {
 
 a {
   color: #00B7FF;
+  margin: 1em;
 }
 
 .navbar {
   color: darkgrey;
+}
+
+#headingText {
+    font-family: sans-serif;
+    font-style: italic;
 }
