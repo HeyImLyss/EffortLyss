@@ -8,8 +8,9 @@ html
     nav.navbar
       small AI was not used in the making of this website. Rest assured any mistakes are completely my own personal incompetence.
       h1#headingText= title
-
-      a About
-      a Blog
-      a Projects
-    block content
+        span#navClickables
+            a.float About
+            a.float Blog
+            a.float Projects
+    div#contentDiv
+        block content

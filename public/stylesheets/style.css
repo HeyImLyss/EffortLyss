@@ -1,18 +1,29 @@
 body {
-  padding: 50px;
+  padding: 25px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
-  margin: 1em;
+  margin: 0.5em;
+}
+
+#contentDiv {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .navbar {
   color: darkgrey;
+  padding-bottom: 50px;
+}
+
+#navClickables {
+    font-size: 0.75em;
+    font-style: normal;
+    float: right;
 }
 
 #headingText {
-    font-family: sans-serif;
     font-style: italic;
 }
