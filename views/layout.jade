@@ -4,13 +4,15 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='icon', type='image/svg+xml', href='/images/favicon.svg')
+    script(type 'text/javascript' src='clock.js' defer)
   body
     nav.navbar
-      small AI was not used in the making of this website. Rest assured any mistakes are completely my own personal incompetence.
-      h1#headingText= title
-        span#navClickables
-            a.float About
-            a.float Blog
-            a.float Projects
+        small AI was not used in the making of this website. Rest assured any mistakes are completely my own personal incompetence.
+            span#clock
+        h1#headingText= title
+            span#navClickables
+                a.float Projects
+                a.float Contact
+
     div#contentDiv
         block content
