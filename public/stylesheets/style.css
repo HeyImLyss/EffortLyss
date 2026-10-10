@@ -140,7 +140,14 @@ div#contentDiv {
   }
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+div#thisisafooter {
+  display: flex;
+  flex-direction: column;
+  min-height: 80dvh;
+
+}
+
+
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;

@@ -10,8 +10,8 @@ html
             span#clock
         h1#headingText=title
             span#navClickables
-                a.float Projects
-                a.float Contact
+                a.float(href="#projects") Projects
+                a.float(href="mailto:someone@example.com") Contact
     .sidebar
         a(href="https://www.github.com") GitHub
         a(href="https://www.Twitter.com") Twitter
@@ -19,4 +19,3 @@ html
         a(href="https://linkedin.com") LinkedIn
     #contentDiv Hello!
         block content
-    footer
