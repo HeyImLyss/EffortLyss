@@ -2,17 +2,31 @@ extends layout
 
 block content
     div#indexContent
-      p Welcome to #{title}
+      p I'm Lyss Billington, and welcome to #{title}! My own little corner of the internet I've carved out for myself.
 
-      p Praesent faucibus urna eget laoreet sodales. Donec lobortis, nulla in egestas volutpat, nisl erat
-      consectetur ipsum, sed porta sem dui nec metus. Nulla sit amet convallis purus. Pellentesque laoreet
-      gravida eros id vulputate. Aenean finibus lorem sit amet ipsum ullamcorper, quis fermentum ligula elementum.
-      Proin maximus, lorem ac dictum varius, eros magna sagittis neque, et tincidunt ex risus ac velit. Donec rutrum
-      eu dolor sed viverra. Nam sed aliquam lacus. Vivamus eget placerat neque. Quisque eu porta ipsum, ut hendrerit
-      dolor.
+      p I'm a software developer from Atlantic Canada, and when I'm not busy taking care of my cat, I spend my time learning cool and exciting ways to engage with the world of web development. To the left (or above, if you're on mobile!) you'll see links to my GitHub, LinkedIn, and other social media. Give me a looksie!
 
       p Duis ac commodo nulla. Donec sed molestie justo, ut bibendum risus. Aenean et dui ut orci condimentum facilisis.
       Morbi ut sem vitae arcu sollicitudin varius id id mauris. Phasellus enim lacus, ornare at pharetra sed, congue
       eu metus. Etiam euismod felis libero, quis consectetur elit porttitor a. In mattis porta nibh ut ultrices.
       Donec eleifend posuere ligula eget elementum. Nam mi arcu, cursus sed dictum eget, sollicitudin ac eros.
       Mauris ornare, leo semper porttitor bibendum, velit ex scelerisque augue, non euismod ligula diam sed nisi.
+      br
+      br
+      svg.icon(viewBox="0 0 24 24", fill="none", stroke="currentColor",
+         stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round",
+         aria-hidden="true")
+
+        //- screen
+        rect(x="4", y="5", width="16", height="11", rx="1.5")
+        //- base
+        path(d="M2 19h20l-1.5-3h-17z")
+        //- trackpad notch
+        path(d="M10 17.5h4")
+    h3 Tech Skills
+    h5 Command Line
+    p Comfortable using the terminal to navigate my every-day workflow. Though Bash is my preferred shell, I'm also familiar with both zsh and PowerShell from their integrations with macOS and Windows
+    h5 Languages
+    p HTML5, CSS3, JavaScript (ES5), Python, C#, Java
+    h5 Database
+    p Familiar with Oracle SQL, MySQL MSSQL, MongoDB, NoSQL, and even the odd Excel spreadsheet when the time calls for it.
