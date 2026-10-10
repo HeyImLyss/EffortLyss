@@ -1,5 +1,4 @@
 
-const timenow = new Date();
-const now = timenow.toLocaleDateString();
+const date = new Date().toLocaleString();
 const clockElement = document.getElementById('clock');
-clockElement.innerHTML = now;
+clockElement.innerHTML += " - " + date;
