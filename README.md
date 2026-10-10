@@ -1,2 +1,2 @@
 # EffortLyss
-Personal Express project. Will function as a personal playground for me to learn the ins and outs of Express.
+Personal portfolio website. As simple as I need it to be, for the time being.
