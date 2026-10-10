@@ -32,27 +32,112 @@ a:hover {
 }
 
 #contentDiv {
-    padding-left: 50px;
-    padding-right: 50px;
+
+    margin-left: 100px;
+    margin-right: 50px;
+    max-width: 75%;
+    border: 5px solid red;
+
 }
 
 .navbar {
     color: var(--info);
     padding-bottom: 50px;
+
+}
+
+.float {
+    justify-content: space-around;
+    margin-right: 2em;
+
 }
 
 #clock {
     float:right;
     font-weight: bold;
+    color: var(--text);
 }
 
 #navClickables {
     font-size: 0.75em;
     font-style: normal;
     float: right;
+    text-align: center;
+    padding-top: 1em;
 }
 
 #headingText {
     color: var(--text);
     margin-left: 1em;
+    padding-bottom: 1em;
+
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: var(--bg);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color:var(--bg);
+  color: var(--text);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div#contentDiv {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+      float: left;
+  }
+  div#contentDiv {
+      margin-left: 10%;
+      margin-right: 10%;}
+  #navClickables {
+      width: 100%;
+  }
+  #headingText {
+      margin: 0;
+      position: relative;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
